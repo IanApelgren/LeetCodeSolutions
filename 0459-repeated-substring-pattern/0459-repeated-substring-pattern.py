@@ -6,13 +6,13 @@ class Solution(object):
         """
         sub = s
         rep = 0
-        for i in range(len(s)):
-            if i != 0:
-                if len(s) % i == 0:
-                    rep = len(s) / i
-                    sub = s[:i]
-                    comp = sub * rep
-                    if comp == s:
-                        return True
+       
+        for i in range(1,len(s)):
+            if len(s) % i == 0:
+                rep = len(s) / i
+                sub = s[:i]
+                comp = sub * rep
+                if comp == s:
+                    return True
             
         
